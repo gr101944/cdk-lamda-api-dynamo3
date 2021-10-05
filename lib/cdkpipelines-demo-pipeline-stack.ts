@@ -40,9 +40,9 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
       }),
    });
    // This is where we add the application stages
-//    const preprod = new CdkpipelinesDemoStage(this, 'PreProd', {
-//     env: { account: '333490196116', region: 'us-east-1' }
-//   });
+   const preprod = new CdkpipelinesDemoStage(this, 'PreProd', {
+    env: { account: '333490196116', region: 'us-east-1' }
+  });
 
 //   // put validations for the stages 
 //   const preprodStage = pipeline.addApplicationStage(preprod);
