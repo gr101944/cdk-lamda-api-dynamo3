@@ -41,8 +41,7 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
    });
 
 
-  pipeline.addApplicationStage(new CdkpipelinesDemoStage(this, 'PreProd', {
-     
+  pipeline.addApplicationStage(new CdkpipelinesDemoStage(this, 'Integration', {     
     env: { account: '333490196116', region: 'us-east-1' }
   }));
   }
