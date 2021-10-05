@@ -40,7 +40,7 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
       }),
    });
    // This is where we add the application stages
-   const preprod = new CdkpipelinesDemoStage(this, 'Testing', {
+   const preprod = new CdkpipelinesDemoStage(this, 'Checking', {
     env: { account: '333490196116', region: 'us-east-1' }
   });
 
