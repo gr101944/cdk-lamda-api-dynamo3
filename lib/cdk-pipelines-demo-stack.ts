@@ -48,7 +48,7 @@ export class CdkpipelinesDemoStack extends cdk.Stack {
         }
     });
    // **********NEED FIX***************
-   // table.grantReadWriteData(this.backend)
+  // table.grantReadWriteData(backend)
     
     const api = new apigateway.LambdaRestApi(this, apiGatewayName, {
       handler: backend,
