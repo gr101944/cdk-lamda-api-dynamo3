@@ -26,7 +26,7 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
         output: sourceArtifact,
         oauthToken: SecretValue.secretsManager('github-token'),
         owner: 'gr101944',
-        repo: 'cdk-demo',
+        repo: 'cdk-lamda-api-dynamo',
         branch: 'main'
       }),
 
@@ -41,8 +41,8 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
    });
 
 
-  pipeline.addApplicationStage(new CdkpipelinesDemoStage(this, 'Integration', {     
-    env: { account: '333490196116', region: 'us-east-1' }
-  }));
+  // pipeline.addApplicationStage(new CdkpipelinesDemoStage(this, 'Integration', {     
+  //   env: { account: '333490196116', region: 'us-east-1' }
+  // }));
   }
 }
