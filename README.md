@@ -2,13 +2,15 @@
 
 ## What does it do?
 
-This project creates a CDK pipeline to deploy an API Gateway and Lambda function to a particular account, region and stage of your choice (dev, preprod, prod, etc)
+* This project creates a CDK pipeline to deploy an API Gateway and Lambda function to a particular account, region and stage of your choice (dev, preprod, prod, etc)
 
-Lambda pulls code from an existing S3 library stored in zip format
+* Lambda pulls code from an existing S3 library stored in zip format
 
-DynamoDB table is an eisting table which is used as env variable in the lambda function
+* DynamoDB table is an eisting table which is used as env variable in the lambda function
 
-The access to Lambda to access DynamoDB did not work. It is WIP.
+* API Gateway is created with lamda association and JSON mapping
+
+* The access to Lambda to access DynamoDB did not work. It is WIP.
 
 
 ### Initialize repository
