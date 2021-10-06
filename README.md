@@ -31,6 +31,7 @@ npx cdk deploy "stack name"
 This will create an empty Pipeline
   
 ### Add Stage for actual deployment of resources
+* Add the stage in the cdkpipelines-demo-pipeline-stack
 * npm run build
 * git add .
 * git commit -m "message"
@@ -50,11 +51,4 @@ New pipeline will start and will deploy resources in the target stage
  * `cdk diff`        compare deployed stack with current state
  * `cdk synth`       emits the synthesized CloudFormation template
 
-## Useful commands
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
