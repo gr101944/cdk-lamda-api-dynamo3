@@ -17,7 +17,7 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
 
       const pipeline = new CdkPipeline(this, 'Pipeline', {
         // The pipeline name
-        pipelineName: 'HRBotPipeline',
+        pipelineName: 'HRBotPipeline2',
         cloudAssemblyArtifact,
 
         // Where the source can be found
@@ -26,7 +26,7 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
         output: sourceArtifact,
         oauthToken: SecretValue.secretsManager('github-token'),
         owner: 'gr101944',
-        repo: 'cdk-lamda-api-dynamo',
+        repo: 'cdk-lamda-api-dynamo2',
         branch: 'main'
       }),
 
