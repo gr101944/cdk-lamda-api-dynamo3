@@ -31,10 +31,10 @@ npx cdk deploy <stack name>
 This will create an empty Pipeline
   
 ### Add Stage for actual deployment of resources
-npm run build
-git add .
-git commit -m "message"
-git push origin master (set your origin properly)
+* npm run build
+* git add .
+* git commit -m "message"
+* git push origin master (set your origin properly)
   
 New pipeline will start and will deploy resources in the target stage
   
