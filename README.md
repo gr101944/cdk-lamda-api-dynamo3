@@ -31,6 +31,10 @@ npx cdk bootstrap  --profile default --cloudformation-execution-policies arn:aws
 npx cdk deploy "stack name"
   
 This will create an empty Pipeline
+### Cross account bootstrap
+
+npx cdk bootstrap --profile rajesh --trust 333490196116 --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://033628942051/us-east-1
+
   
 ### Add Stage for actual deployment of resources
 * Add the stage in the cdkpipelines-demo-pipeline-stack
