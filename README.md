@@ -26,7 +26,7 @@ npx cdk bootstrap  --profile default --cloudformation-execution-policies arn:aws
 
 ### Deploy modules, 'default' below is the AWS profile, it may be different and you have to choose what you have in your profile, stackname as in the 'bin' folder
   
-npx cdk deploy <stack name>
+npx cdk deploy "stack name"
   
 This will create an empty Pipeline
   
