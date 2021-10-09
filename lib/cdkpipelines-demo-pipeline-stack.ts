@@ -17,7 +17,7 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
 
       const pipeline = new CdkPipeline(this, 'Pipeline', {
         // The pipeline name
-        pipelineName: 'HRBotPipeline3',
+        pipelineName: 'HRBotPipeline4',
         cloudAssemblyArtifact,
 
         // Where the source can be found
