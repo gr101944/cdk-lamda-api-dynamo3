@@ -45,9 +45,12 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
     env: { account: '333490196116', region: 'us-east-1' }
   }));
 
+<<<<<<< HEAD
   pipeline.addApplicationStage(new CdkpipelinesDemoStage(this, 'test1', {     
     env: { account: '033628942051', region: 'us-east-1' }
   }));
+=======
+>>>>>>> 0d5a576f37a4364ee143c3e5111b2a0f89828160
 
   //comment
   }
