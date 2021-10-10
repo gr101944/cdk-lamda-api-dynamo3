@@ -17,7 +17,7 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
 
       const pipeline = new CdkPipeline(this, 'Pipeline', {
         // The pipeline name
-        pipelineName: 'HRBotPipeline4',
+        pipelineName: 'NewPipeLine2',
         cloudAssemblyArtifact,
 
         // Where the source can be found
@@ -45,9 +45,7 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
     env: { account: '333490196116', region: 'us-east-1' }
   }));
 
-  pipeline.addApplicationStage(new CdkpipelinesDemoStage(this, 'test1', {     
-    env: { account: '033628942051', region: 'us-east-1' }
-  }));
+
   //comment
   }
 }
