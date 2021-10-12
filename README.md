@@ -26,7 +26,7 @@ npm i @aws-cdk/aws-apigateway @aws-cdk/aws-lambda @aws-cdk/aws-codepipeline @aws
 
 npx cdk bootstrap  --profile default --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://333490196116/us-east-1
 
-npx cdk bootstrap  --profile default --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://033628942051/us-east-1
+npx cdk bootstrap  --profile rajesh --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://033628942051/us-east-1
 
 ### Deploy modules, 'default' below is the AWS profile, it may be different and you have to choose what you have in your profile, stackname as in the 'bin' folder
   
