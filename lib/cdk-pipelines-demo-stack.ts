@@ -32,7 +32,7 @@ export class CdkpipelinesDemoStack extends cdk.Stack {
     //End of Configuration
 
     //Existing assets
-    const byName = s3.Bucket.fromBucketName(this, 'BucketByName', codeBucketName);
+    const codeLocation = s3.Bucket.fromBucketName(this, 'BucketByName', codeBucketName);
     const table = dynamodb.Table.fromTableName(this, 'Table', dynamoDBTableName)
     //
 
@@ -40,7 +40,7 @@ export class CdkpipelinesDemoStack extends cdk.Stack {
      const backend = new lambda.Function(this, lambdaBotName, {
         runtime: lambda.Runtime.NODEJS_12_X,
         handler: 'index.handler',
-        code: lambda.Code.fromBucket(byName, key),
+        code: lambda.Code.fromBucket(codeLocation, key),
         memorySize: memorySize,
         timeout: Duration.seconds (lambdaDuration),
         environment: {
@@ -51,7 +51,9 @@ export class CdkpipelinesDemoStack extends cdk.Stack {
   // table.grantReadWriteData(backend)
   
   //
-  byName.grantRead(backend)
+  codeLocation.grantReadWrite(backend)
+  
+  
     
     const api = new apigateway.LambdaRestApi(this, apiGatewayName, {
       handler: backend,
