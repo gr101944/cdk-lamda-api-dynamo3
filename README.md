@@ -43,6 +43,7 @@ npx cdk bootstrap --profile rajesh --trust 333490196116 --cloudformation-executi
 * npm run build
 * git add .
 * git commit -m "message"
+* git remote set-url origin https://github.com/gr101944/cdk-lamda-api-dynamo3/
 * git push origin master (set your origin properly)
   
 New pipeline will start and will deploy resources in the target stage
