@@ -50,7 +50,7 @@ export class CdkpipelinesDemoStack extends cdk.Stack {
    // **********NEED FIX***************
   // table.grantReadWriteData(backend)
   
-  //
+  //Trigger the flow again
   codeLocation.grantReadWrite(backend)
   
   
